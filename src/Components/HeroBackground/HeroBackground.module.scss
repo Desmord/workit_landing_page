@@ -1,20 +1,25 @@
 @import '../../global.scss';
 
 .container {
-    position: fixed;
+    position:absolute;
+    left: 0px;
+    top:0px;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden;
 
     img:first-of-type {
         position: absolute;
         left: -140px;
         top: 135px;
+        z-index: 1;
     }
 
     img:last-of-type {
         position: absolute;
         right: -62px;
         top: 332px;
+        z-index: 1;
     }
 }
 
@@ -26,7 +31,7 @@
     top: -33%;
     border-radius: 50%;
     background-color: $color-dark-purpule;
-    z-index: -1;
+    z-index: 1;
 }
 
 @media all and (max-width:768px) {
@@ -39,6 +44,7 @@
             right: -95px;
         }
     }
+
 
 }
 

@@ -2,10 +2,10 @@ import styles from './Header.module.scss';
 
 const Header = () => {
     return (
-        <div className={styles.container}>
+        <header className={styles.container}>
             <img src={`./assets/images/logo-light.svg`} alt="workit" />
             <div>Apply for access</div>
-        </div>
+        </header>
     )
 }
 

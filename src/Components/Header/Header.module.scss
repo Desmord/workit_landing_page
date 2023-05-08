@@ -1,0 +1,92 @@
+@import '../../global.scss';
+
+$top-padding: 56px;
+$top-tablet-padding: 32px;
+
+$left-right-padding: 165px;
+$left-right-tablet-padding:39px;
+$left-right-phone-padding: 16px;
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color-white;
+    z-index: 1;
+
+    img,
+    div {
+        padding-top: $top-padding;
+    }
+
+    img {
+        padding-left: $left-right-padding;
+    }
+
+    div {
+        position: relative;
+        padding-right: $left-right-padding;
+        font-family: manrope;
+        font-weight: 700;
+        transition: all .5s ease;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0px;
+            bottom: -5px;
+            width: calc(100% - $left-right-padding);
+            height: 2px;
+            background-color: $color-eucaplyptus;
+        }
+
+        &:hover {
+            cursor: pointer;
+            color: $color-eucaplyptus;
+        }
+    }
+}
+
+@media all and (max-width:768px) {
+    .container {
+
+        img,
+        div {
+            padding-top: $top-tablet-padding;
+        }
+
+        img {
+            padding-left: $left-right-tablet-padding;
+        }
+
+        div {
+            padding-right: $left-right-tablet-padding;
+            font-size: 16px;
+
+            &::after {
+                width: calc(100% - $left-right-tablet-padding);
+            }
+        }
+
+    }
+}
+
+@media all and (max-width:376px) {
+    .container {
+
+        img {
+            padding-left: $left-right-phone-padding;
+        }
+
+        div {
+            padding-right: $left-right-phone-padding;
+
+            &::after {
+                width: calc(100% - $left-right-phone-padding);
+            }
+        }
+
+    }
+}

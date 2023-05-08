@@ -1,0 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+$color-dark-purpule: hsl(273, 85%, 13%);
+$color-eucaplyptus: hsl(150, 100%, 63%);
+$color-davys-grey: hsl(271, 12%, 34%);
+$color-ghost-white: hsl(276, 100%, 99%);
+$color-white: hsl(0, 0%, 100%);
+
+// @mixin ManropeFont {
+//     @font-face {
+//         font-family: manrope;
+//         src: url('../../../public/assets/fonts/Manrope-VariableFont_wght.ttf');
+//     }
+// }
+
+// @mixin FrauncesFont {
+//     @font-face {
+//         font-family: fraunces;
+//         src: url('../../../public/assets/fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+//     }
+// }

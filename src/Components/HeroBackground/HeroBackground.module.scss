@@ -1,0 +1,56 @@
+@import '../../global.scss';
+
+.container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    img:first-of-type {
+        position: absolute;
+        left: -140px;
+        top: 135px;
+    }
+
+    img:last-of-type {
+        position: absolute;
+        right: -62px;
+        top: 332px;
+    }
+}
+
+.backgorundOval {
+    position: relative;
+    width: 300%;
+    height: min(100%, 1460px);
+    left: -100%;
+    top: -33%;
+    border-radius: 50%;
+    background-color: $color-dark-purpule;
+    z-index: -1;
+}
+
+@media all and (max-width:768px) {
+    .container {
+        img:first-of-type {
+            left: -225px;
+        }
+
+        img:last-of-type {
+            right: -95px;
+        }
+    }
+
+}
+
+@media all and (max-width:376px) {
+    .container {
+        img:first-of-type {
+            display: none;
+        }
+
+        img:last-of-type {
+            display: none;
+        }
+    }
+
+}

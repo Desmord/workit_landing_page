@@ -1,0 +1,142 @@
+@import '../../global.scss';
+
+.container {
+    position: relative;
+    margin: 129px auto;
+    display: block;
+    width: min(80%, 1112px);
+    height: 647px;
+
+    img:first-of-type {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 477px;
+        aspect-ratio: 1;
+    }
+
+    img:last-of-type {
+        position: absolute;
+        right: 50px;
+        bottom: -50px;
+        width: 173px;
+        height: 137px;
+    }
+
+    .bioContainer {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        width: max(568px, 70%);
+        padding: 65px;
+        background-color: $color-dark-purpule;
+        color: $color-white;
+
+        h1 {
+            font-family: fraunces;
+        }
+
+        h3 {
+            padding: 20px 0px;
+            font-family: manrope;
+            font-weight: normal;
+            font-size: 18px;
+        }
+
+        .accessButton {
+            width: 190px;
+            padding: 15px;
+            font-family: manrope;
+            font-weight: 700;
+            text-align: center;
+            color: $color-dark-purpule;
+            background-color: $color-eucaplyptus;
+            border: 1px solid $color-eucaplyptus;
+            transition: all 0.3s ease;
+
+            &:hover {
+                cursor: pointer;
+                color: $color-eucaplyptus;
+                background-color: $color-dark-purpule;
+                border: 1px solid $color-eucaplyptus;
+            }
+
+        }
+
+    }
+}
+
+
+@media all and (max-width:768px) {
+
+    .container {
+        height: 494px;
+
+        img:first-of-type {
+            width: 327px;
+            aspect-ratio: 1;
+        }
+
+        .bioContainer {
+            width: 70%;
+            padding: 25px;
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h3 {
+                padding: 10px 0px;
+                font-size: 16px;
+            }
+
+            .accessButton {
+                width: 172px;
+                padding: 10px;
+                font-size: 18px;
+
+            }
+        }
+    }
+
+
+
+}
+
+@media all and (max-width:476px) {
+
+    .container {
+        position: relative;
+        width: 90%;
+
+        img:first-of-type {
+            width: 100%;
+            aspect-ratio: 1;
+        }
+
+        .bioContainer {
+            width: 100%;
+            // padding: 25px;
+            bottom: -25%;
+            text-align: center;
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h3 {
+                padding: 10px 0px;
+                font-size: 16px;
+            }
+
+            .accessButton {
+                width: 172px;
+                padding: 10px;
+                margin: 0 auto;
+                font-size: 18px;
+
+            }
+        }
+    }
+
+}

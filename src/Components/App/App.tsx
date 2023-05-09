@@ -3,6 +3,7 @@ import Header from '../Header/Header';
 import Hero from '../Hero/Hero';
 import MainContent from '../MainContent/MainContent';
 import Founder from '../Founder/Founder';
+import Footer from '../Footer/Footer';
 
 import styles from './App.module.scss';
 
@@ -14,6 +15,7 @@ const App = () => {
             <Hero />
             <MainContent />
             <Founder />
+            <Footer />
         </div>
     )
 }
